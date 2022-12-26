@@ -26,6 +26,16 @@ await queryInterface.bulkInsert('users', [
       updated_at: new Date()
 
     },
+    {
+      name: "narenkontol",
+      profession: "Front End Developer",
+      role: "student",
+      email: "narenkontol123@gmail.com",
+      password: await bcrypt.hash('naren123',10),
+      created_at: new Date(),
+      updated_at: new Date()
+
+    },
 =======
      }
 >>>>>>> 7e99ff4ace82568c683372f7e28a110f3518d4bb
