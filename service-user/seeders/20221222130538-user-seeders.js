@@ -26,10 +26,10 @@ await queryInterface.bulkInsert('users', [
 
     },
     {
-      name: "narenz",
+      name: "kontol",
       profession: "Front End Developer",
       role: "student",
-      email: "narenz123@gmail.com",
+      email: "pepekfarid@gmail.com",
       password: await bcrypt.hash('narenz123',10),
       created_at: new Date(),
       updated_at: new Date()
