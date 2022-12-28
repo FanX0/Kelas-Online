@@ -31,4 +31,24 @@ if (user) {
         message: 'email already exsist'
     })
 }
+
+const password = await bcrypt.hash(req.body.password, 10);
+
+const data = {
+    password,
+    name: req.body.name,
+    email: req.body.email,
+    profession: req.body.profession,
+    role: 'student'
+};
+
+const createUser = await User.create(data);
+
+return res.json({
+    status: 'success',
+    data: {
+        id: createdUser.id
+    }
+});
+
 }
