@@ -42,7 +42,7 @@ const data = {
     role: 'student'
 };
 
-const createUser = await User.create(data);
+const createdUser = await User.create(data);
 
 return res.json({
     status: 'success',
@@ -50,5 +50,4 @@ return res.json({
         id: createdUser.id
     }
 });
-
 }
