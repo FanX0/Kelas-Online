@@ -16,7 +16,7 @@ const validate = v.validate(req.body, schema);
 
 if (validate.length) {
     return res.status(400).json({
-        status: 'error',
+        status: 'error kontol',
         message: validate
     });
 }

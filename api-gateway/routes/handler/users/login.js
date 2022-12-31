@@ -1,4 +1,5 @@
 const apiAdapter = require ('../../apiAdapter');
+
 const {
     URL_SERVICE_USER,
     JWT_SECRET,
@@ -8,9 +9,10 @@ const {
 } = process.env;
 
 const api = apiAdapter(URL_SERVICE_USER);
+
  module.exports = async (req,res) => {
     try {
-        const user = await api.post('/users/register', req.body)
+        const user = await api.post('/users/login', req.body);
         
         return res.json(user.data);
     } catch (error) {
