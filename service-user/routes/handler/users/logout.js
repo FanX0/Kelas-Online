@@ -23,4 +23,4 @@ module.exports = async (req, res) => {
         status: 'succcess',
         message: 'refresh token deleted'
     });
-}
+}   
